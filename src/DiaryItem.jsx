@@ -5,7 +5,7 @@ export default function DiaryItem({author, content, created_date, emotion, id}) 
     <div className='DiaryItem'>
         <div className='info'>
             <span>
-                작성자 : {author} | 감정 점수 : {emotion}
+                작성자 : {author} | 감정 : {emotion}
             </span>
             <br />
             <span className='date'>{new Date(created_date).toLocaleString()}</span>
