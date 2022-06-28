@@ -1,14 +1,14 @@
 import React from 'react'
 import DiaryItem from './DiaryItem'
 
-export default function DiaryList({ diaryList, onDelete }) {
+export default function DiaryList({ diaryList, onRemove, onEdit }) {
     return (
         <div className='DiaryList'>
             <h2>일기 리스트</h2>
             <h3>{diaryList.length}개의 일기가 있습니다.</h3>
             <div>
                 {diaryList.map((it) => (
-                    <DiaryItem key={it.id} {...it} onDelete={onDelete}/>
+                    <DiaryItem key={it.id} {...it} onRemove={onRemove} onEdit={onEdit}/>
                 ))}
             </div>
         </div>
