@@ -55,7 +55,7 @@ export default function DiaryEditor({ onCreate }) {
                     }}
                 />
             </div>
-            <div>
+            {/* <div>
                 <span>오늘의 감정 점수 : </span>
                 <select
                     value={state.emotion}
@@ -72,7 +72,7 @@ export default function DiaryEditor({ onCreate }) {
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                 </select>
-            </div>
+            </div> */}
             <button onClick={handleSubmit}>일기 저장하기</button>
         </div>
     )
