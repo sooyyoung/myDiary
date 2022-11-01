@@ -1,0 +1,13 @@
+{
+  "name": "diary",
+  "main": "app.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  }
+}
